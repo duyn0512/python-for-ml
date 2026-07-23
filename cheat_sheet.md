@@ -47,4 +47,38 @@ This document systematizes core knowledge, syntax, and programming concepts requ
   - *Syntax:* `[EXPRESSION for ITEM in ITERABLE if CONDITION]`
 - **Dict Comprehension:** Construct dictionaries programmatically.
   - *Syntax:* `{KEY: VALUE for ITEM in ITERABLE if CONDITION}`
-  
+
+## WEEK 2: FUNCTIONS, MODULES & ERROR HANDLING
+
+### 1. Function Declaration & Execution
+- **`def` Statement:** Defines a reusable block of code.
+- **`return` Statement:** Exits a function and optionally passes back a value. If omitted, returns `None`.
+
+### 2. Parameters & Arguments
+- **Positional Arguments:** Matched by position/order.
+- **Keyword Arguments:** Matched by parameter name explicitly.
+- **Default Parameters:** Fallback values if arguments are omitted.
+  - *Rule:* Non-default parameters must come **before** default parameters.
+
+### 3. Variable Scope (LEGB Rule)
+- **Local:** Inside current function.
+- **Enclosing:** In outer nested function.
+- **Global:** At top-level of script/module.
+- **Built-in:** Python pre-defined names (`len`, `sum`, etc.).
+
+### 4. Type Hints & Docstrings
+- **Type Hints:** Standardized syntax to specify expected input/output types.
+- **Docstrings:** Multi-line strings explaining purpose, parameters, return values, and raised exceptions.
+
+### 5. Modules & File I/O
+- **Importing Modules:** `import module`, `import module as alias`, `from module import function`.
+- **File Modes:**
+  - `'r'`: Read (fails if non-existent).
+  - `'w'`: Write (truncates or creates new).
+  - `'a'`: Append.
+- **Context Manager (`with`):** Ensures automatic resource clean-up and closing.
+
+### 6. Exception Handling & Debugging
+- **`try / except / else / finally`:** Catch and handle runtime errors gracefully.
+- **`raise`:** Manually trigger exceptions for invalid inputs.
+- **`assert`:** Evaluate boolean expressions during execution for internal debugging.
